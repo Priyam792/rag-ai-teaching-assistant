@@ -1,3 +1,9 @@
-**/*.mp3
-**/*.mp4
-/unused
+audios/
+videos/
+jsons/
+newjsons/
+unused/
+
+*.joblib
+*.txt
+*.mp3
