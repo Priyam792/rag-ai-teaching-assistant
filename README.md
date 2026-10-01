@@ -65,19 +65,24 @@ Answer + Video + Timestamp
 ``` text
 RAG-based-AI-Teaching-Assistant/
 │
+├── src/
+│   ├── video_to_mp3.py
+│   ├── mp3_to_json.py
+│   ├── merge_chunks.py
+│   ├── preprocess_json.py
+│   └── process_incoming.py
+│
+├── docs/
+│   └── architecture.excalidraw
+│
 ├── videos/
 ├── audios/
 ├── jsons/
 ├── newjsons/
 │
-├── video_to_mp3.py
-├── mp3_to_json.py
-├── preprocess_json.py
-├── process_incoming.py
-│
-├── embeddings.joblib
-│
-└── README.md
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 > Generated data such as videos, audio files, JSON files, and embeddings
