@@ -1,5 +1,10 @@
 # RAG AI Teaching Assistant
 
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Ollama](https://img.shields.io/badge/Ollama-LLM-black?logo=ollama&logoColor=white)](https://ollama.com/)
+[![Whisper](https://img.shields.io/badge/Whisper-Speech%20to%20Text-412991?logo=openai&logoColor=white)](https://github.com/openai/whisper)
+[![RAG](https://img.shields.io/badge/RAG-Powered-8A2BE2)]()
+
 A Retrieval-Augmented Generation (RAG) based AI Teaching Assistant for
 the Sigma Web Development course.
 
@@ -63,7 +68,14 @@ Answer + Video + Timestamp
 ## Project Structure
 
 ``` text
+## Project Structure
+
 RAG-based-AI-Teaching-Assistant/
+│
+├── videos/                 # User-provided course videos
+├── audios/                 # Generated MP3 audio files
+├── jsons/                  # Generated Whisper transcripts
+├── newjsons/               # Merged transcript chunks
 │
 ├── src/
 │   ├── video_to_mp3.py
@@ -75,14 +87,9 @@ RAG-based-AI-Teaching-Assistant/
 ├── docs/
 │   └── architecture.excalidraw
 │
-├── videos/
-├── audios/
-├── jsons/
-├── newjsons/
-│
+├── .gitignore
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
 ```
 
 > Generated data such as videos, audio files, JSON files, and embeddings
