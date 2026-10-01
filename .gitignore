@@ -1,9 +1,19 @@
-audios/
+__pycache__/
+*.pyc
+
+.env
+.venv/
+venv/
+
 videos/
+audios/
 jsons/
 newjsons/
 unused/
 
 *.joblib
-*.txt
 *.mp3
+*.mp4
+*.txt
+
+.ipynb_checkpoints/
