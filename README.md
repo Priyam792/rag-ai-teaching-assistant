@@ -76,8 +76,6 @@ RAG-based-AI-Teaching-Assistant/
 ├── process_incoming.py
 │
 ├── embeddings.joblib
-├── prompt.txt
-├── response.txt
 │
 └── README.md
 ```
@@ -130,7 +128,13 @@ Example:
 }
 ```
 
-### Step 4 --- Convert JSON Files to Vectors
+### Step 4 - Merge Chunks
+
+Merge the smaller JSON chunks into larger chunks using `merge_chunks.py`.
+
+This combines multiple consecutive chunks while preserving their video title, number, timestamps, and transcript text. The merged chunks provide more context for better and clearer responses from the LLM.
+
+### Step 5 --- Convert JSON Files to Vectors
 
 Use `preprocess_json.py` to convert the transcript chunks into
 embeddings:
@@ -148,7 +152,7 @@ The script:
 5.  Creates a Pandas DataFrame.
 6.  Saves the DataFrame as `embeddings.joblib`.
 
-### Step 5 --- Prompt Generation and Feeding to the LLM
+### Step 6 --- Prompt Generation and Feeding to the LLM
 
 Run:
 
